@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {
+  BtnFill,
+  BtnOutlined,
+  BtnOutlinedDark,
+  Inp,
+  SubBtn,
+  TagFill,
+  TagFillDark,
+  TagOutlined,
+} from "./Components/Btn";
+import {
+  Client,
+  Feedback,
+  Global,
+  Hire,
+  Increment,
+  NumIcon,
+  Time,
+} from "./Components/HighlightIcons/Icon";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App box-border">
+      <BtnFill />
+      <BtnOutlined />
+      <TagFill />
+      <TagOutlined />
+      <TagFillDark />
+      <Inp />
+      <SubBtn />
+
+      <div className="bg-primary-900 p-5 my-2">
+        <BtnOutlinedDark />
+      </div>
+      <div className="flex flex-wrap">
+        <Client />
+        <Time />
+        <Hire />
+        <Feedback />
+        <Increment />
+        <NumIcon />
+        <Global />
+      </div>
     </div>
   );
 }
