@@ -5,8 +5,8 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      sm: {max: "400px"},
-      md: {max: "744px"},
+      sm: {max: "500px"},
+      md: {max: "900px"},
       lg: {max: "1440px"},
     },
     
@@ -100,7 +100,9 @@ module.exports = {
       6: "32px",
       7: "48px",
       8: "64px",
-      9: "96px",
+      9: "80px",
+      10: "96px",
+      11: "104px",
     },
     fontSize: {
       xs: "12px",
@@ -120,7 +122,11 @@ module.exports = {
       round: "50px",
     },
     
-    extend: {},
+    extend: {
+      flex:{
+        '1':'1 0 0'
+      },
+    },
     plugins: [],
   },
 };
