@@ -1,0 +1,25 @@
+h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.subheading{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+@media (min-width: 900px){
+    
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    .subheading{
+        font-size: 24px;
+    }
+}
+@media (max-width: 500px){
+    .subheading{
+        font-size: 20px;
+    }
+} 

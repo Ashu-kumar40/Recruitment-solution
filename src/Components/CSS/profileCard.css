@@ -1,0 +1,6 @@
+.profile-card-container{
+    flex-wrap: wrap;
+    min-width: 300px;
+    /* width: 380px;
+    max-width: 456px; */
+}

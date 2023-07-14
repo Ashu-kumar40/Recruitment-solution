@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --small: 500px;
+    --med: 900px;
+    --large: 1200px;
+
+    --smy: 24px;
+    --medy: 32px;
+    --lary: 48px;
+
+    --smx: 16px;
+    --medx: 48px;
+    --larx: 64px;
+
+    --maximum-w: 1920px;
+}
+
+
+/* 
+
+BreakPoints
+
+@media (min-width: 900px){
+    
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    
+}
+@media (max-width: 500px){
+
+} 
+
+*/

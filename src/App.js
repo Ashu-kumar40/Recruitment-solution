@@ -1,48 +1,24 @@
 import "./App.css";
-import {
-  BtnFill,
-  BtnOutlined,
-  BtnOutlinedDark,
-  Inp,
-  SubBtn,
-  TagFill,
-  TagFillDark,
-  TagOutlined,
-} from "./Components/Btn";
-import {
-  Client,
-  Feedback,
-  Global,
-  Hire,
-  Increment,
-  NumIcon,
-  Time,
-} from "./Components/HighlightIcons/Icon";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./Pages/Homepage";
+import Navbar from "./Components/Navbar";
+// import LoginPage from "./Pages/LoginPage";
+// import SignPage from "./Pages/SignUpPage";
+import LoginSignPage from "./Pages/LoginSignPage";
+import Footer from "./Components/Footer";
+import CandidateSearchPage from "./Pages/CandidateSearchPage";
 
 function App() {
   return (
-    <div className="App box-border">
-      <BtnFill />
-      <BtnOutlined />
-      <TagFill />
-      <TagOutlined />
-      <TagFillDark />
-      <Inp />
-      <SubBtn />
-
-      <div className="bg-primary-900 p-5 my-2">
-        <BtnOutlinedDark />
-      </div>
-      <div className="flex flex-wrap">
-        <Client />
-        <Time />
-        <Hire />
-        <Feedback />
-        <Increment />
-        <NumIcon />
-        <Global />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />}/>
+        <Route path="/:auth" element={<LoginSignPage />}/>
+        <Route path="/candidate-search" element={<CandidateSearchPage />}/>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

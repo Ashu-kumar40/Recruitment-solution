@@ -1,0 +1,48 @@
+.find-cand-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-cand-content{
+    max-width: var(--maximum-w);
+}
+.find-cand-right{
+    box-shadow: 0px 4px 60px 40px rgba(17, 209, 251, 0.20);
+    background: url('../../Assets/images/candidate.png') no-repeat center center / cover;
+    min-width: 300px;
+    min-height: 400px;
+}
+.find-cand-left>h1{
+    text-align: left;
+}
+
+@media (min-width: 900px){
+    .find-cand-container{
+        padding: 64px 0;
+    }
+    .find-cand-content{
+        flex-direction: row;
+        width: 80%;
+        gap: 48px;
+    }
+    .find-cand-left{
+        max-width: 50%;
+        gap: 48px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    .find-cand-container{
+        padding: 32px 48px;
+    }
+    .find-cand-content{
+        gap: 32px;
+    }
+    .find-cand-left{
+        gap: 32px;
+    }
+}
+@media (max-width: 500px){
+    
+} 

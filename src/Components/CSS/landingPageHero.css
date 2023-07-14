@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+.landing-container {
+    padding: 120px 0;
+    position: relative;
+}
+
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    width: 70%;
+    max-width: var(--maximum-w);
+    text-align: center;
+}
+
+.details {
+    font-size: 20px;
+}
+
+.headline {
+    text-align: center;
+    font-family: 'Passion One', cursive;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, #006FB5 0%, #000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.illustration {
+    position: absolute;
+    width: 70%;
+    height: 30%;
+    transform: rotate(-37.008deg);
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #00D1FF;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+}
+
+.illustration-1 {
+    transform: translate(-40%, -50%) rotate(-37.008deg);
+    
+}
+
+.illustration-2 {
+    transform: translate(-45%, -65%) rotate(-37.008deg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(255, 255, 255, 0.10) 100%, rgba(0, 0, 0, 0.21) 100%);
+    backdrop-filter: blur(25px);
+    border: 3px solid rgba(255, 255, 255, 50%);
+}
+
+@media (min-width: 900px) and (max-width:1156px) {
+    .headline{
+        font-size: 72px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    .landing-container {
+        padding: 80px 0;
+
+    }
+
+    .illustration {
+        /* width: 698px;
+        height: 160px; */
+        left: 40%;
+    }
+
+    .landing-content {
+        gap: 48px;
+        width: 90%;
+    }
+
+    .headline {
+        font-size: 56px;
+    }
+    .details{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .landing-container {
+        padding: 40px 24px;
+
+    }
+
+    .landing-content {
+        gap: 32px;
+        width: 100%;
+    }
+
+    .headline {
+        font-size: 40px;
+    }
+
+    .details {
+        font-size: 12px;
+    }
+}
