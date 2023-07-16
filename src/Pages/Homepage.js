@@ -1,79 +1,46 @@
 import React from "react";
-import {
-  BtnFill,
-  BtnOutlined,
-  BtnOutlinedDark,
-  SubBtn,
-  TagFillDark,
-  TagFillWDark,
-  TagOutlined,
-} from "../Components/Btn";
-import HighlightCard from "../Components/Cards/HighlightCard";
-import ProfileCard from "../Components/CandidateList/ProfileCard";
-import TestimonialCard from "../Components/Cards/TestimonialCard";
+import { BtnOutlined } from "../Components/Btn";
 import Faq from "../Components/Faq";
-import Footer from "../Components/Footer";
-//   import {
-//     Client,
-//     Feedback,
-//     Global,
-//     Hire,
-//     Increment,
-//     NumIcon,
-//     Time,
-//   } from "../Components/HighlightIcons/Icon";
-import LoginSignPage from "./LoginPage";
 import Partners from "../Components/Partners";
-import Input from "../Components/Input";
 import FindCandidateSec from "../Components/FindCandidateSec";
 import LandingPageHero from "../Components/LandingPageHero";
-import CandidateSearch from "../Components/CandidateList/CandidateSearchSec";
+import HighlightSec from "../Components/HighlightSec/HighlightSec";
+import HowItWorksSec from "../Components/HowItWorksSec";
+import TestimonialSec from "../Components/TestimonialSec";
+import Subheading from "../Components/Subheading";
+import Navbar from "../Components/Navbar";
 
 export default function Homepage() {
   return (
-    <div>
-      <div>
-        <LandingPageHero />
-      </div>
-      <div className="App box-border w-full ">
-        <div className="my-2">
-          <BtnFill text={"Login"} />
-          <BtnFill text={"Register"} />
-          <BtnOutlined text={"Outlined"} />
-          <TagOutlined />
-          <TagFillDark />
-          <TagFillWDark />
-          <SubBtn text={"Submit"} />
-          <Input />
+    <>
+      <Navbar />
+      <div className="homepage-container w-full py-6">
+        <div>
+          <LandingPageHero />
         </div>
-
-        <div className="bg-primary-900 p-5 my-2">
-          <BtnOutlinedDark />
-          <HighlightCard />
+        <div>
+          <HighlightSec />
         </div>
-
-        <div className="flex flex-wrap">
-          {/* <Client />
-        <Time />
-        <Hire />
-        <Feedback />
-        <Increment />
-        <NumIcon />
-        <Global /> */}
-          <TestimonialCard />
+        <div>
           <Partners />
+        </div>
+        <div>
+          <HowItWorksSec />
+        </div>
+        <div>
+          <FindCandidateSec />
+        </div>
+        <div>
+          <TestimonialSec />
+        </div>
+        <div>
           <Faq />
         </div>
-        <div className="flex flex-wrap gap-3">
-          <ProfileCard name={"Ashish"} />
-          <ProfileCard name={"Ashu"} />
-          <ProfileCard name={"Farman"} />
+        <div className="w-full flex flex-col justify-center items-center py-5">
+          <Subheading text={"Still have doubt?"} alignText={"center"} />
+          <BtnOutlined text={"Contact Us"} />
         </div>
-        <LoginSignPage />
-        <CandidateSearch />
-        <FindCandidateSec />
-        <Footer />
       </div>
-    </div>
+    </>
   );
 }

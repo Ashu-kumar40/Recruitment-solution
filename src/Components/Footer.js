@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="flex flex-col gap-2">
             <div className="subscribe flex gap-1">
               <Input placeholder={"Enter your email"}/>
-              <BtnOutlinedDark />
+              <BtnOutlinedDark text={"subscribe"}/>
             </div>
             <p className="text-xs">
               By subscribing you agree to with our Privacy Policy and provide

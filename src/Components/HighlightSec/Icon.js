@@ -48,10 +48,13 @@ function Global() {
   );
 }
 
-function NumIcon() {
+function NumIcon({
+  color,
+  num
+}) {
   return (
-    <div className="num-icon-lg w-[94px] h-[94px] sm:w-[72px] sm:h-[72px] bg-secondary-s4 rounded-round inline-flex justify-center items-center">
-      <span className="text-2xl sm:text-xl text-white">1</span>
+    <div className={`num-icon-lg w-fit h-fit ${color} rounded-[50%] flex justify-center items-center`}>
+      <span className="w-[94px] h-[94px] sm:w-[72px] sm:h-[72px] text-2xl sm:text-xl text-white flex justify-center items-center font-medium">{num}</span>
     </div>
   );
 }

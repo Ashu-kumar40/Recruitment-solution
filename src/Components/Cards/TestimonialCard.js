@@ -2,10 +2,11 @@ import React from "react";
 
 export default function TestimonialCard() {
   return (
-    <div className="flex flex-col justify-center items-center gap-4 
-    min-w-[270px] px-5 py-7 rounded-br 
-    bg-white border border-primary-900 
-    hover:shadow-2xl hover:shadow-primary-900/40 ease-in duration-100">
+    <div className="test-card-container flex flex-col justify-center items-center gap-4 
+    min-w-[270px] px-5 py-7 
+    rounded-br 
+    bg-neutral-100
+    card-shadow">
       <div className="profile-photo">
         <img src={require("../../Assets/images/profile.png")} alt="" />
       </div>
