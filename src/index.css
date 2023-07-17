@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root{
     --small: 500px;
     --med: 900px;

@@ -103,10 +103,11 @@ function TagOutlined({ handleSubmit, onClick, action, text }) {
   return (
     <>
       <button
-        className="min-w-fit py-2 px-5 inline-flex rounded-round border-2 border-primary-200 justify-center items-center sm:text-xs font-medium text-sm text-primary-200 leading-6 sm:leading-3 md:leading-4 hover:border-primary-200 hover:bg-primary-200 hover:text-white transition duration-100"
+        className="min-w-fit py-1 px-4 inline-flex rounded-round border-2 border-secondary-s6 bg-[#d7a5ff66] justify-center items-center sm:text-xs font-normal text-sm text-secondary-s6 transition duration-100"
         onSubmit={handleSubmit}
         type={action}
         onClick={onClick}
+        disabled
       >
         {text}
       </button>

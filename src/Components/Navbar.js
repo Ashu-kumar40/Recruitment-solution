@@ -16,7 +16,7 @@ export default function Navbar() {
   })
 
   return (
-    <div className="navbar-container common-container sticky top-0 z-10 border-b py-2 bg-white h-[65px] ">
+    <div className="navbar-container common-container sticky top-0 z-10  py-2 bg-white shadow-lg h-[65px] ">
       <div
         className="navbar-content relative min-w-[80%] md:min-w-full sm:min-w-full flex justify-between items-center
       "
@@ -27,13 +27,13 @@ export default function Navbar() {
 
         <div className="nav-mobile items flex justify-end items-center gap-6">
           <div className="nav-links flex justify-center gap-6 md:gap-5 items-center text-sm md:text-sm">
-            <a className="block" href="">
+            <Link className="block hover:text-primary-900 hover:border-b-2 border-primary-900" to={"/"}>
               Home
-            </a>
-            <a className="block" href="">
-              Features
-            </a>
-            <a className="block" href="">
+            </Link>
+            <Link className="block hover:text-primary-900 hover:border-b-2 border-primary-900" to={"/candidate-search"}>
+              Find Candidates
+            </Link>
+            <a className="block hover:text-primary-900 hover:border-b-2 border-primary-900" href="#">
               Services
             </a>
             <Link to={"/login"}>
