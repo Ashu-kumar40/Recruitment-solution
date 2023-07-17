@@ -8,7 +8,7 @@ const iconClass =
   "absolute left-1/2 -translate-x-1/2 -translate-x-1/2 -top-[42px] sm:-top-[36px]";
 
 export default function HighlightCard(
-  {icon} 
+  {icon, desc} 
 ) {
 
   
@@ -54,8 +54,7 @@ export default function HighlightCard(
         {iconOutput}
       </div>
       <p className="text-sm sm:text-xs leading-6 sm:leading-4 text-center ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus
-        veniam quos incidunt praesentium qui aperiam aut minus recusandae nisi.
+        {desc}
       </p>
     </div>
   );
