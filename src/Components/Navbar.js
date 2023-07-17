@@ -1,27 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { BtnFill, BtnOutlined } from "./Btn";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
+import "./CSS/navbar.css";
 
 export default function Navbar() {
+  const [clicked, setClicked] = useState(false);
+
+  const handleclick = (() => {
+    let navMob = document.querySelector(".nav-mobile");
+    setClicked(!clicked);
+    if (clicked) {
+      navMob.style.transform ="translateX(100%)"
+    }else navMob.style.transform ="translateX(0px)"
+  })
+
   return (
-    <div className="w-full flex justify-center items-center border-b py-2 bg-white">
+    <div className="navbar-container common-container sticky top-0 z-10 border-b py-2 bg-white h-[65px] ">
       <div
-        className=" min-w-[80%] md:min-w-full sm:px-3  sm:min-w-full flex justify-between items-center
+        className="navbar-content relative min-w-[80%] md:min-w-full sm:min-w-full flex justify-between items-center
       "
       >
         <div className="logo w-[190px] md:w-[130px] sm:min-w-[130px]:">
           <Logo />
         </div>
-        <div className="items flex justify-center items-center gap-6">
-          <div className="links flex  justify-center items-center gap-6 md:gap-3 text-sm md:text-sm">
-            <a className="block sm:hidden" href="">
+
+        <div className="nav-mobile items flex justify-end items-center gap-6">
+          <div className="nav-links flex justify-center gap-6 md:gap-5 items-center text-sm md:text-sm">
+            <a className="block" href="">
               Home
             </a>
-            <a className="block sm:hidden" href="">
+            <a className="block" href="">
               Features
             </a>
-            <a className="block sm:hidden" href="">
+            <a className="block" href="">
               Services
             </a>
             <Link to={"/login"}>
@@ -31,6 +43,11 @@ export default function Navbar() {
               <BtnFill text={"Register"} />
             </Link>
           </div>
+        </div>
+        <div className="hamburger" onClick={handleclick}>
+          <span id="l-1" className={`line ${clicked ? "line-1" : ""}`}></span>
+          <span id="l-2" className={`line ${clicked ? "line-2" : ""}`}></span>
+          <span id="l-3" className={`line ${clicked ? "line-3" : ""}`}></span>
         </div>
       </div>
     </div>
