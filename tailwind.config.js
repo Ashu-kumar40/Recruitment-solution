@@ -7,7 +7,7 @@ module.exports = {
     screens: {
       sm: {max: "500px"},
       md: {max: "900px"},
-      lg: {max: "1440px"},
+      lg: {min: "1440px"},
     },
     
     colors: {
@@ -118,7 +118,7 @@ module.exports = {
     },
     borderRadius: {
       none: "0px",
-      br: "12px",
+      default: "12px",
       round: "50px",
     },
     

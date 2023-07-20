@@ -14,16 +14,16 @@ export default function ProfileCard({
       className="profile-card-container flex flex-col items-start gap-5
       py-6 px-5
       bg-neutral-100
-      rounded-br
+      rounded-default
       card-shadow
     "
     >
       <div className="name-image flex items-center gap-5">
         <img
-          className="w-10 h-10 sm:w-9 sm:h-9 rounded-round"
+          className="bg-image w-[72px] h-[72px] rounded-round"
           // src={require('../../Assets/images/profile.png')}  
           src={profileUrl}
-          alt=" photo"
+          alt="Profile"
         />
         <div className="name">
           <h2 className="name text-lg sm:text-base font-bold">{name}</h2>

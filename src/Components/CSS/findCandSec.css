@@ -6,6 +6,7 @@
 
 .find-cand-content{
     max-width: var(--maximum-w);
+    gap: 16px;
 }
 .find-cand-right{
     box-shadow: 0px 4px 60px 40px rgba(17, 209, 251, 0.20);
@@ -15,6 +16,15 @@
 }
 .find-cand-left>h1{
     text-align: left;
+    padding-top: 0;
+    /* gap: 16px; */
+}
+
+.find-cand-desc{
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
 }
 
 @media (min-width: 900px){
@@ -22,13 +32,12 @@
         padding: 64px 0;
     }
     .find-cand-content{
-        flex-direction: row;
         width: 80%;
         gap: 48px;
     }
     .find-cand-left{
         max-width: 50%;
-        gap: 48px;
+        gap: 16px;
     }
 }
 
@@ -37,12 +46,16 @@
         padding: 32px 48px;
     }
     .find-cand-content{
+        flex-direction: column;
         gap: 32px;
     }
-    .find-cand-left{
-        gap: 32px;
-    }
+    
 }
 @media (max-width: 500px){
-    
+    .find-cand-content{
+        flex-direction: column;
+    }
+    .find-cand-desc{
+        font-size: 12px;
+    }
 } 

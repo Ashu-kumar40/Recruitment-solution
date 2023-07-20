@@ -3,9 +3,6 @@
     justify-content: space-between;
     padding: 80px 0;
     gap: 48px;
-    /* position: fixed;
-    bottom: 0;
-    width: 100%; */
 }
 
 .main-content, .bottom-content{
@@ -14,6 +11,9 @@
     gap: 32px;
     display: flex;
     justify-content: space-between;
+}
+.bottom-content{
+    padding-top: 32px;
 }
 
 .links-section {
@@ -45,10 +45,15 @@
         gap: 32px;
         width: 100%;
     }
-
+    .subscribe-section {
+        width: 100%;
+    }
     .links-section {
         width: 100%;
         gap: 12px;
+    }
+    .bottom-content{
+        padding-top: 24px;
     }
 }
 @media (max-width: 500px) {
@@ -62,7 +67,13 @@
         gap: 16px;
         width: 100%;
     }
+    .bottom-content{
+        padding-top:20px ;
+    }
     .links-section {
+        width: 100%;
+    }
+    .subscribe-section {
         width: 100%;
     }
 }

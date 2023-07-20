@@ -4,10 +4,11 @@ import { SubBtn } from "../Btn";
 import { authtype} from "../../Pages/LoginSignPage";
 
 const dis =
-  "sub-btn py-2 flex px-3 rounded-br border-2 justify-center items-center sm:text-xs w-full font-medium text-sm leading-6 sm:leading-3 md:leading-4 bg-neutral-100 text-neutral-400 xborder-neutral-400";
+  "sub-btn border-2 bg-neutral-100 text-neutral-400 border-neutral-400";
 
 const activeState =
-  "sub-btn py-2 flex px-3 rounded-br border-2 justify-center items-center sm:text-xs w-full font-medium text-sm leading-6 sm:leading-3 md:leading-4 border-primary-900  bg-primary-900 text-white";
+  "sub-btn border-2 border-primary-900 bg-primary-900 text-white";
+
 
 export default function LoginSignupHeader({
   loginLinkName,

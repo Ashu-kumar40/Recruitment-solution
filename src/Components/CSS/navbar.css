@@ -1,3 +1,16 @@
+.navbar-content{
+    width: 100%;
+    max-width: var(--maximum-w);
+}
+
+.nav-logo{
+    width: 130px;
+}
+
+.nav-links{
+    gap: 24px;
+    font-size: 16px;
+}
 .hamburger{
     display: none;
 }
@@ -31,6 +44,15 @@
         height: 80px;
         padding: 32px 0;
     }
+    .navbar-content{
+        width: 80%;
+    }
+    .nav-logo{
+        width: 190px;
+    }
+    .nav-links{
+        gap: 32px;
+    }
 }
 
 /* Teblet */
@@ -38,6 +60,7 @@
     .navbar-container{
         height: 72px;
     }
+    
     .nav-mobile{
         display: flex;
         justify-content: center;
@@ -67,8 +90,3 @@
         
     }
 }
- 
-/* Mobile */
-@media (max-width: 500px){
-
-} 

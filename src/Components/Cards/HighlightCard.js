@@ -1,11 +1,12 @@
 import React from "react";
 import * as Icon from "../HighlightSec/Icon";
+import '../CSS/highlightCard.css'
   
 const Container =
-  "card-shadow bg-neutral-100 relative min-w-[180px] max-w-[400px] px-8 pt-[80px] mt-[80px] pb-7 sm:pb-5 sm:pt-[50px] sm:mt-[50px] sm:px-6 rounded-br relative";
+  "highlight-card-container card-shadow bg-neutral-100 relative min-w-[180px] max-w-[400px] px-8 pt-[80px] mt-[80px] pb-7 rounded-default relative";
 
 const iconClass =
-  "absolute left-1/2 -translate-x-1/2 -translate-x-1/2 -top-[42px] sm:-top-[36px]";
+  "absolute left-1/2 -translate-x-1/2 -translate-x-1/2 -top-[35px] lg:-top-[48px]";
 
 export default function HighlightCard(
   {icon, desc} 
@@ -53,7 +54,7 @@ export default function HighlightCard(
         {/* <Icon.Client />  */}
         {iconOutput}
       </div>
-      <p className="text-sm sm:text-xs leading-6 sm:leading-4 text-center ">
+      <p className="highlight-desc leading-6 text-center ">
         {desc}
       </p>
     </div>

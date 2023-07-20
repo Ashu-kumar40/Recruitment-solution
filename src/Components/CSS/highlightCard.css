@@ -1,0 +1,14 @@
+.highlight-desc{
+    font-size: 16px;
+}
+
+@media (max-width: 500px){
+    .highlight-card-container{
+        padding: 50px 40px 32px 40px;
+        margin-top: 50px;
+    }
+    .highlight-desc{
+        font-size: 12px;
+        line-height: 16px;
+    }
+} 

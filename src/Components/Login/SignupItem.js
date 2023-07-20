@@ -4,6 +4,7 @@ import Input from "../Input";
 import LoginSignupHeader from "./LoginSignupHeader";
 import { SubBtn } from "../Btn";
 import "../CSS/login.css";
+import { Link } from "react-router-dom";
 
 const fields = signupFields;
 let fieldState = {};
@@ -29,7 +30,7 @@ export default function SignUp() {
     <div className="signup-container flex flex-col gap-3 w-full">
       <LoginSignupHeader loginLinkName={"Login"} signLinkName={"SignUp"} />
       <form onSubmit={handleSubmit}>
-        <div className="signup-inp flex flex-col gap-1">
+        <div className="signup-inp flex flex-col gap-2">
           {fields.map((field) => (
             <Input
               key={field.id}
@@ -45,9 +46,9 @@ export default function SignUp() {
         </div>
       </form>
       <SubBtn handleSubmit={handleSubmit} text={"Sign Up"} />
-      <a href="#" className="text-primary-500">
+      <Link to={""} className="text-primary-500">
         Forgot Password?
-      </a>
+      </Link > 
     </div>
   );
 }

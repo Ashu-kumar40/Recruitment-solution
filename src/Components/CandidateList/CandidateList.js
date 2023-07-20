@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react"; 
 import { candidates } from "../../Constants/data";
 import ProfileCard from "./ProfileCard";
 import "../CSS/candidateList.css";

@@ -10,8 +10,9 @@
 
 .login-page-content {
     max-width: 560px;
-    padding: 32px 16px;
+    padding: 40px 16px;
     background: linear-gradient(136deg, rgba(154, 154, 154, 0.14) 0%, rgba(60, 60, 60, 0.05) 100%);
+    max-width:512px ;
 }
 
 @media (min-width: 900px) {
@@ -33,9 +34,6 @@
     .login-page-content {
         padding: 48px 32px;
         gap: 24px;
+        width: 100%;
     }
-}
-
-@media (max-width: 500px) {
-
 }

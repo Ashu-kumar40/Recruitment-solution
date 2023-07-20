@@ -1,8 +1,9 @@
 import React from "react";
+import '../CSS/icon.css'
 
 function Client() {
   return (
-    <div className="inline-flex w-[94px] h-[94px] sm:w-[72px] sm:h-[72px]">
+    <div className="highlight-icon">
       <img src={require('../../Assets/icons/client.png')} alt="Global" />
     </div>
   );
@@ -10,7 +11,7 @@ function Client() {
 
 function Time() {
   return (
-    <div className="inline-flex w-[94px] h-[94px] sm:w-[72px] sm:h-[72px]">
+    <div className="highlight-icon">
       <img src={require('../../Assets/icons/time.png')} alt="Global" />
     </div>
   );
@@ -18,7 +19,7 @@ function Time() {
 
 function Hire() {
   return (
-    <div className="inline-flex w-[94px] h-[94px] sm:w-[72px] sm:h-[72px]">
+    <div className="highlight-icon">
       <img src={require('../../Assets/icons/successful-hire.png')} alt="Global" />
     </div>
   );
@@ -26,7 +27,7 @@ function Hire() {
 
 function Feedback() {
   return (
-    <div className="inline-flex w-[94px] h-[94px] sm:w-[72px] sm:h-[72px]">
+    <div className="highlight-icon">
       <img src={require('../../Assets/icons/feedback.png')} alt="Global" />
     </div>
   );
@@ -34,7 +35,7 @@ function Feedback() {
 
 function Increment() {
   return (
-    <div className="inline-flex w-[94px] h-[94px] sm:w-[72px] sm:h-[72px]">
+    <div className="highlight-icon">
       <img src={require('../../Assets/icons/increment.png')} alt="Global" />
     </div>
   );
@@ -42,7 +43,7 @@ function Increment() {
 
 function Global() {
   return (
-    <div className="inline-flex w-[94px] h-[94px] sm:w-[72px] sm:h-[72px]">
+    <div className="highlight-icon">
       <img src={require('../../Assets/icons/global.png')} alt="Global" />
     </div>
   );
@@ -53,8 +54,8 @@ function NumIcon({
   num
 }) {
   return (
-    <div className={`num-icon-lg w-fit h-fit ${color} rounded-[50%] flex justify-center items-center`}>
-      <span className="w-[94px] h-[94px] sm:w-[72px] sm:h-[72px] text-2xl sm:text-xl text-white flex justify-center items-center font-medium">{num}</span>
+    <div className={`num-icon-lg w-fit h-fit ${color} rounded-round flex justify-center items-center`}>
+      <span className="num-icon-text">{num}</span>
     </div>
   );
 }
