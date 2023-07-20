@@ -4,7 +4,7 @@ export default function TestimonialCard() {
   return (
     <div className="test-card-container flex flex-col justify-center items-center gap-4 
     min-w-[270px] px-5 py-7 
-    rounded-br 
+    rounded-default 
     bg-neutral-100
     card-shadow">
       <div className="profile-photo">

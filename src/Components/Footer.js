@@ -1,14 +1,15 @@
 import React from "react";
 import { BtnOutlinedDark } from "./Btn";
 import './CSS/footer.css'
+import '../index.css'
 import Input from "./Input";
 import { LogoDark } from "./Logo";
 
 export default function Footer() {
   return (
-    <div className="footer-container flex flex-col bg-primary-900 text-white">
+    <div className="footer-container common-container bg-primary-900 text-white">
       <div className="main-content">
-        <div className="subscribe-section flex flex-col gap-5 w-[50%] md:w-full ">
+        <div className="subscribe-section flex flex-col gap-5 ">
           <LogoDark width={"200px"}/>
           <p className="text-sm">
             Join our newsletter to stay up to date on features and releases.
@@ -32,39 +33,39 @@ export default function Footer() {
           <div className="flex flex-col">
             <h2>Column One</h2>
             <div className="links flex flex-col">
-              <a href="#">Link</a>
-              <a href="#">Link</a>
-              <a href="#">Link</a>
-              <a href="#">Link</a>
-              <a href="#">Link</a>
+              <a href="/">Link</a>
+              <a href="/">Link</a>
+              <a href="/">Link</a>
+              <a href="/">Link</a>
+              <a href="/">Link</a>
             </div>
           </div>
           <div className="flex flex-col">
             <h2>Column Two</h2>
             <div className="links flex flex-col">
-              <a href="#">Link</a>
-              <a href="#">Link</a>
-              <a href="#">Link</a>
-              <a href="#">Link</a>
-              <a href="#">Link</a>
+              <a href="/">Link</a>
+              <a href="/">Link</a>
+              <a href="/">Link</a>
+              <a href="/">Link</a>
+              <a href="/">Link</a>
             </div>
           </div>
           <div className="flex flex-col">
             <h2>Follow Us</h2>
             <div className="links flex flex-col">
-              <a href="#">
+              <a href="/">
                 <span>icon</span>
                 <span>Facebook</span>
-              </a>
-              <a href="#">
+              </a> 
+              <a href="/">
                 <span>icon</span>
                 <span>Instagram</span>
               </a>
-              <a href="#">
+              <a href="/">
                 <span>icon</span>
                 <span>Twitter</span>
               </a>
-              <a href="#">
+              <a href="/">
                 <span>icon</span>
                 <span>Linkedin</span>
               </a>
@@ -72,14 +73,14 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bottom-content text-xs max-w-[1156px] flex justify-between items-start content-start flex-wrap pt-6 md:pt-5 sm:pt-4 border-t border-white">
+      <div className="bottom-content text-xs w-full max-w-[1156px] flex justify-between items-start content-start flex-wrap pt-4 border-t border-white">
         <div className="copyright">
           © 2023 RecruitEase. All rights reserved.
         </div>
         <div className="policy flex w-fit gap-5 ">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookies Settings</a>
+          <a href="/">Privacy Policy</a>
+          <a href="/">Terms of Service</a>
+          <a href="/">Cookies Settings</a>
         </div>
       </div>
     </div>

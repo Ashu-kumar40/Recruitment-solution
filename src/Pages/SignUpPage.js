@@ -7,7 +7,7 @@ export default function SignPage() {
   return (
     <div className="login-page-container w-full py-5 px-3 flex flex-col justify-center items-center">
         <Logo />
-      <div className="login-page-content md:w-full max-w-[512px]: flex flex-col justify-center gap-2 items-center rounded-br
+      <div className="login-page-content w-full flex flex-col justify-center gap-1 items-center rounded-default
       border border-white
       ">
         <div className="login-form-content w-full">

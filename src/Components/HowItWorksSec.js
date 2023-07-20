@@ -14,7 +14,7 @@ export default function HowItWorksSec() {
         {boxes.map((box) => (
           <div className="howItWorksSec-box">
             <NumIcon num={box.id} color={box.color} />
-            <div className="howItWorksSec-desc rounded-br bg-neutral-100 p-3">
+            <div className="howItWorksSec-desc rounded-default bg-neutral-100">
               {box.desc}
             </div>
           </div>

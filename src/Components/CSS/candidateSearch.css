@@ -36,9 +36,6 @@
         width: 80%;
         max-width: var(--maximum-w);
     }
-    .cand-search-sec{
-        flex-direction: row;
-    }
     .heading>h1{
         font-size: 72px;
     }
@@ -51,8 +48,13 @@
     .heading>h1{
         font-size: 56px;
     }
+    .cand-search-sec{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 500px){
-
+    .cand-search-sec{
+        flex-direction: column;
+    }
 } 

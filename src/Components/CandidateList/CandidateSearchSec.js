@@ -40,12 +40,12 @@ export default function CandidateSearch({onQueryRole, onQueryLoc}) {
   };
 
   return (
-    <div className="cand-search-container flex justify-center items-center">
+    <div className="cand-search-container common-container flex justify-center items-center">
       <div className="cand-search-content flex flex-col gap-4">
         <div className="heading">
           <h1>Recruit with Ease</h1>
         </div>
-        <div className="cand-search-sec flex flex-col justify-center items-center gap-3">
+        <div className="cand-search-sec flex justify-center items-center gap-3">
           <div className="role-search search-common w-full">
             <div className="w-full relative">
               <Input

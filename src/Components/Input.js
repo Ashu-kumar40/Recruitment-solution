@@ -1,7 +1,8 @@
 import React from "react";
+import './CSS/input.css'
 
-const fixedClass =
-  "py-2 flex px-3 rounded-br items-center  sm:text-xs font-medium text-sm leading-5 sm:leading-2 md:leading-3 w-full h-full text-black";
+// const fixedClass =
+//    "py-2 flex px-3 rounded-br items-center  sm:text-xs font-medium text-sm leading-5 sm:leading-2 md:leading-3 w-full h-full text-black";
 
 export default function Input({
   onChange,
@@ -25,7 +26,7 @@ export default function Input({
         id={id}
         required={isRequired}
         placeholder={placeholder}
-        className={fixedClass}
+        className="input-field w-full h-full text-black min-h-[40px]"
       />
     </div>
   );

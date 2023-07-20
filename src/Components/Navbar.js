@@ -3,6 +3,7 @@ import { BtnFill, BtnOutlined } from "./Btn";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
 import "./CSS/navbar.css";
+import '../index.css';
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -18,24 +19,24 @@ export default function Navbar() {
   return (
     <div className="navbar-container common-container sticky top-0 z-10  py-2 bg-white shadow-lg h-[65px] ">
       <div
-        className="navbar-content relative min-w-[80%] md:min-w-full sm:min-w-full flex justify-between items-center
+        className="navbar-content relative flex justify-between items-center
       "
       >
-        <div className="logo w-[190px] md:w-[130px] sm:min-w-[130px]:">
+        <div className="nav-logo">
           <Logo />
         </div>
 
-        <div className="nav-mobile items flex justify-end items-center gap-6">
-          <div className="nav-links flex justify-center gap-6 md:gap-5 items-center text-sm md:text-sm">
+        <div className="nav-mobile items flex items-center gap-6">
+          <div className="nav-links h-full flex justify-center items-center">
             <Link className="block hover:text-primary-900 hover:border-b-2 border-primary-900" to={"/"}>
               Home
             </Link>
             <Link className="block hover:text-primary-900 hover:border-b-2 border-primary-900" to={"/candidate-search"}>
               Find Candidates
             </Link>
-            <a className="block hover:text-primary-900 hover:border-b-2 border-primary-900" href="#">
+            <Link className="block hover:text-primary-900 hover:border-b-2 border-primary-900" to={""}>
               Services
-            </a>
+            </Link>
             <Link to={"/login"}>
               <BtnOutlined text={"Login"} />
             </Link>

@@ -1,6 +1,7 @@
 import React from 'react'
 import TestimonialCard from './Cards/TestimonialCard'
 import Subheading from './Subheading'
+import '../index.css'
 
 export default function TestimonialSec() {
   return (

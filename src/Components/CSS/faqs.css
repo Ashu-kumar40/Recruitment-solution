@@ -10,6 +10,7 @@
 
 .faq-content {
     width: 80%;
+    max-width: var(--maximum-w);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,6 +26,13 @@
     justify-content: center;
 
 
+}
+.que{
+    font-weight: 600;
+    padding: 8px;
+    border-left: 4px solid #00416A;
+    color: #00416A;
+    background-color: #cff5ff;
 }
 
 .qna {

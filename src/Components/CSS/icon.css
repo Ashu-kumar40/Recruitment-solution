@@ -1,0 +1,29 @@
+
+.highlight-icon{
+    display: inline-flex;
+    width: 94px;
+    height: 94px;
+}
+
+.num-icon-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94px;
+    height: 94px;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+@media (max-width: 500px){
+    .highlight-icon{
+        width: 72px;
+        height: 72px;
+    }
+    .num-icon-text{
+        width: 72px;
+        height: 72px;
+        font-size: 32px;
+    }
+}
